@@ -6,12 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>试炼1</title>
     <style>
-      div {
-        width: 510px;
-        height: 100%;
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
       }
+
+      body {
+        background-color: white;
+        font-family: "Courier New", Courier, monospace;
+      }
+
+      div {
+        width: 100%;
+      }
+
       #time1 {
-        width: 600px;
+        width: 100vw;
         height: 30px;
         line-height: 30px;
         color: #fff;
@@ -19,50 +30,81 @@
       }
 
       div img {
-        width: 200px;
-        height: 200px;
-        text-align: center;
+        width: 100%;
+        max-width: 200px;
+        height: auto;
+        display: block;
+        margin: 0 auto;
       }
 
       #why {
-        font-family: "Courier New", Courier, monospace;
         font-size: 30px;
         color: rgb(148, 224, 86);
+        text-align: center;
+        margin: 20px 0;
+      }
+
+      button {
+        padding: 10px;
+        font-size: 20px;
+        margin: 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        color: white;
+      }
+
+      #hqbut1 {
+        background-color: black;
+      }
+
+      #back {
+        background-color: grey;
+      }
+
+      .off {
+        background-color: red;
+      }
+
+      #videol {
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      iframe {
+        width: 100%;
+        max-width: 765px;
+        height: 600px;
+        border: none;
       }
     </style>
   </head>
-  <body class="body" style="width: 100%; height: auto">
+  <body>
     <div>
-      <span class="top1">
-        <img src=" " alt=" " />
-        <div id="why"></div>
-        <br
-      /></span>
+      <div id="time1"></div>
+      <img src="img/swh.gif" alt="" />
+      <div id="why"></div>
       <button id="hqbut1">获取并刷新</button>
       <button id="back">退出</button>
       <button class="off">关灯</button>
-      <br /><br />
       <div id="videol" style="display: none">
         <iframe
           id="video"
-          src=" "
+          src="https://www.xvideos.com/embedframe/52803831"
           frameborder="0"
-          width="765"
-          height="600"
           scrolling="no"
           allowfullscreen="allowfullscreen"
         ></iframe>
-      </div>
+        </div>
 
       <script>
         var yuan = [
-          "https://www.xvideos.com/embedframe/52803831",
+           "https://www.xvideos.com/embedframe/52803831",
           "https://www.xvideos.com/embedframe/52651531",
           "https://www.xvideos.com/embedframe/52922513",
           "https://www.xvideos.com/embedframe/52220223",
           "https://www.xvideos.com/embedframe/51669283",
-          "https://www.xvideos.com/embedframe/69462061",
-        ];
+          "https://www.xvideos.com/embedframe/69462061"];
         var top1 = document.querySelector(".top1");
         var img = document.querySelector("img");
         var divwhy = document.getElementById("why");
