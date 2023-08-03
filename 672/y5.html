@@ -54,6 +54,14 @@
         height: auto;
         margin-top: 1em;
       }
+
+      .container > p:nth-of-type(2) .highlight {
+        color: green;
+      }
+
+      a {
+        text-decoration: none;
+      }
     </style>
   </head>
   <body>
@@ -61,18 +69,25 @@
       <div class="icon">
         <img src="img2/icon.png" alt="Icon" id="iconImage" />
       </div>
-      <h1>找雪儿妹妹</h1>
-      <p><span class="highlight">邀请码 419140</span></p>
+      <h1>找妹妹啪啪</h1>
+      <p><span class="highlight">妹妹邀请码(必填)：360909</span></p>
+      <p>
+        <a href="https://sc6p.com">
+          <span class="highlight"
+            >正在进入中，请稍等 倒计时 <span id="countdown">3</span></span
+          >
+        </a>
+      </p>
     </div>
     <div class="image-container">
       <img src="img2/5.jpg" alt="Image 5" class="clickableImage" />
     </div>
     <script type="text/javascript">
       var links = [
-        "https://fh0p.com",
-        "https://fh0p.com",
-        "https://fh0p.com",
-        "https://fh0p.com",
+        "https://sc6p.com",
+        "https://sc6p.com",
+        "https://sc6p.com",
+        "https://sc6p.com",
       ];
 
       function handleImageClick() {
@@ -89,9 +104,15 @@
         image.addEventListener("click", handleImageClick);
       });
 
-      var timer = setTimeout(function () {
-        var randomLink = links[Math.floor(Math.random() * links.length)];
-        window.location.href = randomLink;
+      var secondsLeft = 3;
+      var countdownElement = document.getElementById("countdown");
+      var timer = setInterval(function () {
+        secondsLeft--;
+        countdownElement.textContent = secondsLeft;
+        if (secondsLeft === 0) {
+          var randomLink = links[Math.floor(Math.random() * links.length)];
+          window.location.href = randomLink;
+        }
       }, 3000);
     </script>
   </body>
