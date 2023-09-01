@@ -1,0 +1,4 @@
+2023-08-30 01:30:02.9188-INFO v2rayN start up | v2rayN - V6.23 - 2023/04/21 | D:\程序\v2rayN\v2rayN\v2rayN.exe
+2023-08-30 01:31:03.5194-INFO UpdateTaskRunSubscription
+2023-08-30 01:31:38.5586-INFO MyAppExit Begin
+2023-08-30 01:31:38.7385-INFO MyAppExit End
